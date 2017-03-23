@@ -7,3 +7,9 @@
 2. run `dotnet restore` to restore all the packages.
 3. run `dotnet run` to start the webapi
 
+
+## Helpful Links
+
+https://siderite.blogspot.com/2016/07/aspnet-core-web-api-with-visual-studio.html#at3511413001
+
+https://www.linkedin.com/pulse/aspnet-core-10-angular2-mongodb-visual-studio-code-celimpilo-mncwango
