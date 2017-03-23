@@ -1,5 +1,7 @@
-namespace API.Modals {
-    public class UserModal {
-        
+namespace API.Modals
+{
+    public class UserModal
+    {
+        public string Name { get; set; }
     }
 }
