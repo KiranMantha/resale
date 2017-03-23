@@ -1,0 +1,73 @@
+<table class="table table-vmiddle table-hover" *ngIf="gvOptions.columnDefs">
+    <thead>
+        <tr>
+            <th *ngFor=" let column of gvOptions.columnDefs ">
+                {{column.displayName}}
+            </th>
+            <th *ngIf="gvOptions.showActions">
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let row of gvOptions.data ">
+            <td *ngFor=" let column of gvOptions.columnDefs ">
+                {{row[column.fieldName]}}
+            </td>
+            <td *ngIf="gvOptions.showActions">
+                <button *ngIf="!gvOptions.actionsToShow || gvOptions.actionsToShow.indexOf('VIEW') > -1" class="btn btn-info btn-sm" (click)="_view($event,row)">
+                        <span class="fa fa-search"></span>
+                    </button>
+                <button *ngIf="!gvOptions.actionsToShow || gvOptions.actionsToShow.indexOf('EDIT') > -1" class="btn btn-primary btn-sm" (click)="_edit($event,row)">
+                        <span class="fa fa-pencil"></span>
+                    </button>
+                <button *ngIf="!gvOptions.actionsToShow || gvOptions.actionsToShow.indexOf('DELETE') > -1" class="btn btn-danger btn-sm"
+                    (click)="_delete($event,row)">
+                        <span class="fa fa-trash-o"></span>
+                    </button>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr *ngIf="gvOptions.data.length===0 ">
+            <td [attr.colspan]="gvOptions.columnDefs.length + 1" *ngIf="gvOptions.showActions">No Data To Display..</td>
+            <td [attr.colspan]="gvOptions.columnDefs.length" *ngIf="!gvOptions.showActions">No Data To Display..</td>
+        </tr>
+    </tfoot>
+</table>
+<table class="table table-vmiddle table-hover" *ngIf="!gvOptions.columnDefs">
+    <thead *ngIf="gvOptions.data.length !== 0">
+        <tr>
+            <th *ngFor=" let columnName of gvOptions.data[0] | keys ">
+                {{columnName}}
+            </th>
+            <th *ngIf="gvOptions.showActions">
+                Actions
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor=" let row of gvOptions.data ">
+            <td *ngFor=" let columnName of row | keys ">
+                {{row[columnName]}}
+            </td>
+            <td *ngIf="gvOptions.showActions">
+                <button *ngIf="!gvOptions.actionsToShow || gvOptions.actionsToShow.indexOf('VIEW') > -1" class="btn btn-info btn-sm" (click)="_view($event,row)">
+                        <span class="fa fa-search"></span>
+                    </button>
+                <button *ngIf="!gvOptions.actionsToShow || gvOptions.actionsToShow.indexOf('EDIT') > -1" class="btn btn-primary btn-sm" (click)="_edit($event,row)">
+                        <span class="fa fa-pencil"></span>
+                    </button>
+                <button *ngIf="!gvOptions.actionsToShow || gvOptions.actionsToShow.indexOf('DELETE') > -1" class="btn btn-danger btn-sm"
+                    (click)="_delete($event,row)">
+                        <span class="fa fa-trash-o"></span>
+                    </button>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr *ngIf="gvOptions.data.length===0 ">
+            <td>No Data To Display..</td>
+        </tr>
+    </tfoot>
+</table>

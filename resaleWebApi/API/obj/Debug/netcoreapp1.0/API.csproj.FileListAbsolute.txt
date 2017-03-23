@@ -1,0 +1,8 @@
+E:\resale\resaleWebApi\API\bin\Debug\netcoreapp1.0\API.deps.json
+E:\resale\resaleWebApi\API\bin\Debug\netcoreapp1.0\API.runtimeconfig.json
+E:\resale\resaleWebApi\API\bin\Debug\netcoreapp1.0\API.runtimeconfig.dev.json
+E:\resale\resaleWebApi\API\bin\Debug\netcoreapp1.0\API.dll
+E:\resale\resaleWebApi\API\bin\Debug\netcoreapp1.0\API.pdb
+E:\resale\resaleWebApi\API\obj\Debug\netcoreapp1.0\API.AssemblyInfo.cs
+E:\resale\resaleWebApi\API\obj\Debug\netcoreapp1.0\API.dll
+E:\resale\resaleWebApi\API\obj\Debug\netcoreapp1.0\API.pdb

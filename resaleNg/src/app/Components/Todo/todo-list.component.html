@@ -1,0 +1,10 @@
+<div>
+  <h1>{{Title}}</h1>
+  <form (submit)='SaveTodo()'>
+    <input [(ngModel)]='Todo.name' type='text' name='textbox' class="form-control control" />
+    <div>
+      <p routerLink='{{todo.id}}' *ngFor='let todo of _todoService.Todos'>{{todo.name}}</p>
+    </div>
+    <button class="btn btn-primary btn-sm">Submit</button>
+  </form>
+</div>
