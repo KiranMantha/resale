@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using API.Interfaces;
 using API.Repositories;
+using API.Modals;
 
 namespace API
 {
@@ -29,16 +26,26 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(options => { options.AddPolicy("CorsPolicy", 
-                                      builder => builder.AllowAnyOrigin() 
-                                                        .AllowAnyMethod() 
-                                                        .AllowAnyHeader() 
-                                                        .AllowCredentials()); 
-                                  });
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+            builder => builder.AllowAnyOrigin()
+                              .AllowAnyMethod()
+                              .AllowAnyHeader()
+                              .AllowCredentials());
+            });
             // Add framework services.
             services.AddMvc();
 
+            //Add connection string services
+            services.Configure<Settings>(options =>
+                                {
+                                    options.ConnectionString = Configuration.GetSection("MongoConnection:ConnectionString").Value;
+                                    options.Database = Configuration.GetSection("MongoConnection:Database").Value;
+                                });
+
             // Register application services.
+            //services.AddScoped<IDbContext<T>, DbContext<T>>();
             services.AddScoped<IUser, UserRepository>();
         }
 
@@ -47,6 +54,8 @@ namespace API
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            app.UseCors("CorsPolicy");
 
             app.UseMvc();
         }

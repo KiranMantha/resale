@@ -1472,12 +1472,12 @@
           }
         }
       },
-      "mongocsharpdriver/2.3.0": {
+      "mongocsharpdriver/2.4.3": {
         "type": "package",
         "dependencies": {
-          "MongoDB.Bson": "2.3.0",
-          "MongoDB.Driver": "2.3.0",
-          "MongoDB.Driver.Core": "2.3.0",
+          "MongoDB.Bson": "2.4.3",
+          "MongoDB.Driver": "2.4.3",
+          "MongoDB.Driver.Core": "2.4.3",
           "NETStandard.Library": "1.6.0"
         },
         "compile": {
@@ -1487,7 +1487,7 @@
           "lib/netstandard1.5/MongoDB.Driver.Legacy.dll": {}
         }
       },
-      "MongoDB.Bson/2.3.0": {
+      "MongoDB.Bson/2.4.3": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -1503,11 +1503,11 @@
           "lib/netstandard1.5/MongoDB.Bson.dll": {}
         }
       },
-      "MongoDB.Driver/2.3.0": {
+      "MongoDB.Driver/2.4.3": {
         "type": "package",
         "dependencies": {
-          "MongoDB.Bson": "2.3.0",
-          "MongoDB.Driver.Core": "2.3.0",
+          "MongoDB.Bson": "2.4.3",
+          "MongoDB.Driver.Core": "2.4.3",
           "NETStandard.Library": "1.6.0",
           "System.Linq.Queryable": "4.0.1"
         },
@@ -1518,10 +1518,10 @@
           "lib/netstandard1.5/MongoDB.Driver.dll": {}
         }
       },
-      "MongoDB.Driver.Core/2.3.0": {
+      "MongoDB.Driver.Core/2.4.3": {
         "type": "package",
         "dependencies": {
-          "MongoDB.Bson": "2.3.0",
+          "MongoDB.Bson": "2.4.3",
           "NETStandard.Library": "1.6.0",
           "System.Collections.Specialized": "4.0.1",
           "System.Diagnostics.TraceSource": "4.0.0",
@@ -4975,59 +4975,59 @@
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll"
       ]
     },
-    "mongocsharpdriver/2.3.0": {
-      "sha512": "L9MB7816Pm/0FsCQZs/o28mufDAAKBMcJBnz8EyMBXVEMfrIYxJwIR326eZZPDa3AWlfo/rKb2f8UTjVEFxzXw==",
+    "mongocsharpdriver/2.4.3": {
+      "sha512": "MtQKl3RJ2Kb4phl61vFSCQl48dtPJmkq+ggp2kRc0Mac03mOFrbIjot6tb2XLQipHSS/CZuhhnIg5DzeEUXM5g==",
       "type": "package",
-      "path": "mongocsharpdriver/2.3.0",
+      "path": "mongocsharpdriver/2.4.3",
       "files": [
         "License.rtf",
         "lib/net45/MongoDB.Driver.Legacy.XML",
         "lib/net45/MongoDB.Driver.Legacy.dll",
         "lib/netstandard1.5/MongoDB.Driver.Legacy.dll",
         "lib/netstandard1.5/MongoDB.Driver.Legacy.xml",
-        "mongocsharpdriver.2.3.0.nupkg.sha512",
+        "mongocsharpdriver.2.4.3.nupkg.sha512",
         "mongocsharpdriver.nuspec"
       ]
     },
-    "MongoDB.Bson/2.3.0": {
-      "sha512": "ImZ8Dstc+ZUxEqgIXJtFuL2+sesc+e0SwF68Wh8P3gSYLyWRL3hacNNgmE9iUgxUyYzVg4Sr55aRsHkHw9IaDw==",
+    "MongoDB.Bson/2.4.3": {
+      "sha512": "frj9UMKRW7EwYSqqD5x1uO61Rrm50dMdbjz19bKhNtG31iEZceoURcEBSsjvlrm2OotLwVKmEF4f64INwb+HzQ==",
       "type": "package",
-      "path": "mongodb.bson/2.3.0",
+      "path": "mongodb.bson/2.4.3",
       "files": [
         "License.rtf",
         "lib/net45/MongoDB.Bson.XML",
         "lib/net45/MongoDB.Bson.dll",
         "lib/netstandard1.5/MongoDB.Bson.dll",
         "lib/netstandard1.5/MongoDB.Bson.xml",
-        "mongodb.bson.2.3.0.nupkg.sha512",
+        "mongodb.bson.2.4.3.nupkg.sha512",
         "mongodb.bson.nuspec"
       ]
     },
-    "MongoDB.Driver/2.3.0": {
-      "sha512": "wq4rHgUorkGMn66TNQ4kDlh/u1DihK4bB+LdLgklP6Z7tpq3Y5It25daKrq6zcoLheCoBqhjBsKHUzrfG0KUfQ==",
+    "MongoDB.Driver/2.4.3": {
+      "sha512": "jMqO2K/POx3xjFrWOc7U4nTXc0+F7/KuBXFt5+Rr0qnOMsiZy+1YDoZ+J0AASfNaNRZ6BZafXq93Q3rDWZ5KUQ==",
       "type": "package",
-      "path": "mongodb.driver/2.3.0",
+      "path": "mongodb.driver/2.4.3",
       "files": [
         "License.rtf",
         "lib/net45/MongoDB.Driver.XML",
         "lib/net45/MongoDB.Driver.dll",
         "lib/netstandard1.5/MongoDB.Driver.dll",
         "lib/netstandard1.5/MongoDB.Driver.xml",
-        "mongodb.driver.2.3.0.nupkg.sha512",
+        "mongodb.driver.2.4.3.nupkg.sha512",
         "mongodb.driver.nuspec"
       ]
     },
-    "MongoDB.Driver.Core/2.3.0": {
-      "sha512": "CaMUxfkDkTnRR5iQ/tlVRYtJyoUAl0ToSj9/fWfQb/GYt8veQzSqu6jOLE1+KT+2HMvL6kIhX08tam+xU+iycQ==",
+    "MongoDB.Driver.Core/2.4.3": {
+      "sha512": "h87ILAszZ1HoHZAqrdYi1eLfC9dlQJxDweWSu9gcIlgW6FtPGxf0pca+YjXSBmoYSvW1PnAkzygNw/z60lqyjg==",
       "type": "package",
-      "path": "mongodb.driver.core/2.3.0",
+      "path": "mongodb.driver.core/2.4.3",
       "files": [
         "License.rtf",
         "lib/net45/MongoDB.Driver.Core.XML",
         "lib/net45/MongoDB.Driver.Core.dll",
         "lib/netstandard1.5/MongoDB.Driver.Core.dll",
         "lib/netstandard1.5/MongoDB.Driver.Core.xml",
-        "mongodb.driver.core.2.3.0.nupkg.sha512",
+        "mongodb.driver.core.2.4.3.nupkg.sha512",
         "mongodb.driver.core.nuspec"
       ]
     },
@@ -9926,7 +9926,10 @@
       "Microsoft.Extensions.Logging.Console >= 1.1.1",
       "Microsoft.Extensions.Logging.Debug >= 1.1.1",
       "Microsoft.NETCore.App >= 1.1.1",
-      "mongocsharpdriver >= 2.3.0"
+      "MongoDB.Bson >= 2.4.3",
+      "MongoDB.Driver >= 2.4.3",
+      "MongoDB.Driver.Core >= 2.4.3",
+      "mongocsharpdriver >= 2.4.3"
     ]
   },
   "packageFolders": {
@@ -10009,7 +10012,19 @@
           },
           "mongocsharpdriver": {
             "target": "Package",
-            "version": "2.3.0"
+            "version": "2.4.3"
+          },
+          "MongoDB.Driver": {
+            "target": "Package",
+            "version": "2.4.3"
+          },
+          "MongoDB.Driver.Core": {
+            "target": "Package",
+            "version": "2.4.3"
+          },
+          "MongoDB.Bson": {
+            "target": "Package",
+            "version": "2.4.3"
           }
         }
       }

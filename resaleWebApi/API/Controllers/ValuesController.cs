@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using API.Interfaces;
@@ -17,9 +15,9 @@ namespace API.Controllers
         }
         // GET api/values
         [HttpGet]
-        public IEnumerable<UserModal> Get()
+        public Task<IEnumerable<User>> Get()
         {
-            return _iUser.ListAll();
+            return _iUser.GetAllUsers();
         }
 
         // GET api/values/5

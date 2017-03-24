@@ -6,7 +6,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceRoot}\\resaleWebApi\\API\\bin\\Debug\\netcoreapp1.0\\API.dll",
+            "program": "${workspaceRoot}\\resaleWebApi\\API\\bin\\Debug\\netcoreapp1.1\\API.dll",
             "args": [],
             "cwd": "${workspaceRoot}\\resaleWebApi\\API",
             "stopAtEntry": false,
