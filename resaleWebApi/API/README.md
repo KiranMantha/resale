@@ -20,3 +20,5 @@ https://www.linkedin.com/pulse/aspnet-core-10-angular2-mongodb-visual-studio-cod
 https://www.codeproject.com/Articles/1151842/Using-MongoDB-NET-Driver-with-NET-Core-WebAPI
 
 https://www.codeproject.com/Articles/1077319/Csharp-MongoDB-Polymorphic-Collections-with-Generi
+
+https://github.com/fpetru/WebApiMongoDB
