@@ -6,6 +6,7 @@ using Microsoft.Extensions.Logging;
 using API.Interfaces;
 using API.Repositories;
 using API.Modals;
+using API.DbContext;
 
 namespace API
 {
@@ -45,7 +46,7 @@ namespace API
                                 });
 
             // Register application services.
-            //services.AddScoped<IDbContext<T>, DbContext<T>>();
+            services.AddScoped(typeof(IDbContext<>), typeof(DbContext<>));
             services.AddScoped<IUser, UserRepository>();
         }
 
