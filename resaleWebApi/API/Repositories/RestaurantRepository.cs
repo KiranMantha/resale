@@ -11,7 +11,7 @@ namespace API.Repositories
 {   
     public class RestaurantRepository : IRestaurant
     {
-        private IDbContext<Restaurant> _dbContext;
+        private readonly IDbContext<Restaurant> _dbContext;
         public RestaurantRepository(IDbContext<Restaurant> dbContext){
             _dbContext = dbContext;
             _dbContext.RegisterMapIfNeeded<Restaurant>();
