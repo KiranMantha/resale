@@ -5,7 +5,7 @@
     2. [dotnet core sdk](https://www.microsoft.com/net/download/core#/sdk)
     3. [MongoDb](https://www.mongodb.com/download-center#community)
     4. [RoboMongo](https://robomongo.org/download)
-    5. Install c# extension in visual syudio code extensions menu.
+    5. Install c#, c# extensions, asp.net helper extensions in visual syudio code extensions menu.
 2. run `dotnet restore` to restore all the packages.
 3. run `dotnet build` to build the project
 4. run `dotnet run` to start the webapi
