@@ -9,15 +9,19 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class ValuesController : Controller
     {
-        private readonly IUser _iUser;
-        public ValuesController(IUser iUser){
-            _iUser = iUser;
+        
+        private readonly IRestaurant _iRestaurant;
+        public ValuesController(IRestaurant iRestaurant){
+            //_iUser = iUser;
+            _iRestaurant = iRestaurant;
         }
         // GET api/values
         [HttpGet]
-        public Task<IEnumerable<User>> Get()
+        public List<Restaurant> Get()
         {
-            return _iUser.GetAllUsers();
+            //return _iUser.GetAllUsers();
+            var k = _iRestaurant.GetAllRestaurants(); 
+            return k;
         }
 
         // GET api/values/5

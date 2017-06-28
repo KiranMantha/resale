@@ -11,6 +11,12 @@
 4. run `dotnet run` to start the webapi
 
 
+## Bulk insert mongodb data
+
+1. copy and place the attached dataset json contained in this application.
+2. run `mongoimport --db <your-database-name> --collection <your-collection-name> --file <location>primer-dataset.json`
+
+
 ## Helpful Links
 
 https://siderite.blogspot.com/2016/07/aspnet-core-web-api-with-visual-studio.html#at3511413001

@@ -15,10 +15,10 @@ namespace API.Repositories {
             _dbContext.setCollection("User");
         }
 
-        public async Task<IEnumerable<User>> GetAllUsers()
+        public List<User> GetAllUsers()
         {
             var col = _dbContext.Collection;
-            return await _dbContext.Collection.Find(new BsonDocument()).ToListAsync();
+            return _dbContext.Collection.Find(new BsonDocument()).ToList();
         }
     }
 }

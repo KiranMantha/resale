@@ -48,6 +48,7 @@ namespace API
             // Register application services.
             services.AddScoped(typeof(IDbContext<>), typeof(DbContext<>));
             services.AddScoped<IUser, UserRepository>();
+            services.AddScoped<IRestaurant, RestaurantRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

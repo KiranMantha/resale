@@ -9,5 +9,6 @@ namespace API.DbContext
         IMongoDatabase Database { get; }
         IMongoCollection<T> Collection { get; }
         void setCollection(string collectionName);
+        void RegisterMapIfNeeded<TClass>();
     }
 }

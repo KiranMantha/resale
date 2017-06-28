@@ -28,10 +28,13 @@ namespace API.DbContext
 
         // Check to see if map is registered before registering class map
         // This is for the sake of the polymorphic types that we are using so Mongo knows how to deserialize
-        private void RegisterMapIfNeeded<TClass>()
+        public void RegisterMapIfNeeded<TClass>()
         {
-            if (!BsonClassMap.IsClassMapRegistered(typeof(TClass)))
-                BsonClassMap.RegisterClassMap<TClass>();
+            if (!BsonClassMap.IsClassMapRegistered(typeof(TClass))) {   
+                BsonClassMap.RegisterClassMap<TClass>(c => {
+                    c.AutoMap();
+                });
+            }
         }
     }
 }
