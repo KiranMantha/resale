@@ -9642,16 +9642,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\resale\\resaleDOTVVM\\resaleDOTVVM.csproj",
+      "projectUniqueName": "E:\\resale\\resaleWeb\\DOTVVM\\resaleDOTVVM.csproj",
       "projectName": "resaleDOTVVM",
-      "projectPath": "e:\\resale\\resaleDOTVVM\\resaleDOTVVM.csproj",
-      "outputPath": "e:\\resale\\resaleDOTVVM\\obj\\",
+      "projectPath": "E:\\resale\\resaleWeb\\DOTVVM\\resaleDOTVVM.csproj",
+      "outputPath": "E:\\resale\\resaleWeb\\DOTVVM\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/resaleDOTVVM.dll": "e:\\resale\\resaleDOTVVM\\bin\\placeholder\\netcoreapp1.1\\resaleDOTVVM.dll"
+        "lib/netcoreapp1.1/resaleDOTVVM.dll": "E:\\resale\\resaleWeb\\DOTVVM\\bin\\placeholder\\netcoreapp1.1\\resaleDOTVVM.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {

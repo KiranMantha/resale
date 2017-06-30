@@ -14,6 +14,7 @@ namespace resaleDOTVVM
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseUrls("http://localhost:6000")
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();

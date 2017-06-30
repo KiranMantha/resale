@@ -9809,16 +9809,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\resale\\resaleWebApi\\API\\API.csproj",
+      "projectUniqueName": "E:\\resale\\resaleWeb\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "E:\\resale\\resaleWebApi\\API\\API.csproj",
-      "outputPath": "E:\\resale\\resaleWebApi\\API\\obj\\",
+      "projectPath": "E:\\resale\\resaleWeb\\API\\API.csproj",
+      "outputPath": "E:\\resale\\resaleWeb\\API\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
       ],
       "files": {
-        "lib/netcoreapp1.1/API.dll": "E:\\resale\\resaleWebApi\\API\\bin\\placeholder\\netcoreapp1.1\\API.dll"
+        "lib/netcoreapp1.1/API.dll": "E:\\resale\\resaleWeb\\API\\bin\\placeholder\\netcoreapp1.1\\API.dll"
       },
       "frameworks": {
         "netcoreapp1.1": {
