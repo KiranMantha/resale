@@ -15,7 +15,7 @@ namespace API
             var host = new WebHostBuilder()
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
-                .UseUrls("http://localhost:6100")
+                .UseUrls("", "http://localhost:6200")
                 .UseIISIntegration()
                 .UseStartup<Startup>()
                 .Build();
