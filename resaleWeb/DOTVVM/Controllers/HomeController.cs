@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace resaleDOTVVM.Controllers
+namespace DOTVVM.Controllers
 {
     public class HomeController : Controller
     {
